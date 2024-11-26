@@ -4,6 +4,8 @@
   --black: #333333;
   --green: #094936;
   --blue: #55EABD;
+  --altone-bold: 'Altone Trial Bold', sans-serif;
+  --altone-reg: 'Altone Trial Regular', sans-serif;
 }
 
 * {
@@ -15,7 +17,7 @@
 body {
   background-color: black;
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
   display: grid;
   grid-template-areas: 
   'header'
@@ -34,6 +36,7 @@ body {
 }
 
 .header {
+  grid-area: header;
   display: flex;
   align-items: center;
   padding: var(--standard-padding);
@@ -41,6 +44,7 @@ body {
   height: 4em;
   background-color: transparent;
   position:fixed;
+  z-index: 999;
 }
 
 .header__logo {
@@ -54,12 +58,97 @@ body {
 }
 
 .hero {
+  display: flex;
+  font-family: var(--altone-bold);
+  grid-area: hero;
   height: 100vh;
   width: 100%; 
+  position: relative;
+  align-items: center;
 }
 
 .hero__image {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.hero__heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  line-height: 3.6rem;
+  color: var(--blue);
+  margin: 0;
+  padding-bottom: 18em;
+  font-weight: 700;
+}
+
+.hero__heading--experience {
+  font-size: 2.8rem;
+  color: var(--white);
+}
+
+.hero__heading--bonzai {
+  color: var(--blue);
+  margin: 0;
+  padding-left: 0.2em;
+  letter-spacing: -7px;
+  font-size: 5.5rem;
+}
+
+.hero__heading--slogan {
+  font-weight: 500;
+  padding-left: 1em;
+  color: var(--white);
+  font-size: 1.5rem;
+  width: 12em;
+  padding-bottom: 9em;
+  letter-spacing: -1px;
+  position: absolute;
+}
+
+.hero__heading--slogan--blue {
+  color: var(--blue);
+}
+
+.button {
+  font-size: 1.5rem;
+  position: absolute;
+  width: 8em;
+  height: 2em;
+  background-color: transparent;
+  color: var(--white);
+  border: 2px solid var(--white);
+  margin-left: 1em;
+  border-radius: 16px;
+  font-weight: 700;
+  margin-top: -1em;
+  box-shadow: 0 0 2px 0;
+  letter-spacing: -1px;
+
+}
+
+.hero__learn-more-wrapper {
+  position: absolute;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  top: 90%;
+  gap: 5px;
+  width: 100%;
+}
+
+.hero__learn-more {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.hero__learn-more-image {
+  height: 40px;
+  width: 40px;
 }
