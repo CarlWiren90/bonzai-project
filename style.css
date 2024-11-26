@@ -4,7 +4,7 @@
   --black: #333333;
   --green: #094936;
   --blue: #55EABD;
-  --altone-bold: 'Altone Trial Bold', sans-serif;
+  --altone-bold: 'Altone Trial', sans-serif;
   --altone-reg: 'Altone Trial Regular', sans-serif;
 }
 
@@ -45,6 +45,7 @@ body {
   background-color: transparent;
   position:fixed;
   z-index: 999;
+  backdrop-filter: blur(5px);
 }
 
 .header__logo {
@@ -83,22 +84,23 @@ body {
   margin: 0;
   padding-bottom: 18em;
   font-weight: 700;
+  padding-left: 0.5em;
 }
 
-.hero__heading--experience {
+.hero__heading-experience {
   font-size: 2.8rem;
   color: var(--white);
 }
 
-.hero__heading--bonzai {
+.hero__heading-bonzai {
   color: var(--blue);
   margin: 0;
-  padding-left: 0.2em;
+  padding-left: 0.1em;
   letter-spacing: -7px;
   font-size: 5.5rem;
 }
 
-.hero__heading--slogan {
+.hero__heading-slogan {
   font-weight: 500;
   padding-left: 1em;
   color: var(--white);
@@ -106,6 +108,7 @@ body {
   width: 12em;
   padding-bottom: 9em;
   letter-spacing: -1px;
+  padding-left: 1em;
   position: absolute;
 }
 
@@ -114,6 +117,7 @@ body {
 }
 
 .button {
+  font-family: var(--altone-bold);
   font-size: 1.5rem;
   position: absolute;
   width: 8em;
@@ -127,7 +131,6 @@ body {
   margin-top: -1em;
   box-shadow: 0 0 2px 0;
   letter-spacing: -1px;
-
 }
 
 .hero__learn-more-wrapper {
@@ -138,7 +141,7 @@ body {
   align-items: center;
   justify-content: center;
   bottom: 0;
-  top: 90%;
+  top: 85%;
   gap: 5px;
   width: 100%;
 }
@@ -146,9 +149,30 @@ body {
 .hero__learn-more {
   font-size: 1.5rem;
   font-weight: 400;
+  font-family: var(--altone-bold);
+
 }
 
 .hero__learn-more-image {
   height: 40px;
   width: 40px;
+}
+
+.innovation {
+  font-family: 'Altone Trial';
+  grid-area: innovation;
+  min-height: 100vh;
+  background-color: var(--white);
+}
+
+.innovation__heading {
+  font-size: 2.7rem;
+  text-align: center;
+  color: var(--black);
+  letter-spacing: -2px;
+  padding-top: 1em;
+}
+
+.innovation__heading-sustainability {
+  color: var(--blue)
 }
