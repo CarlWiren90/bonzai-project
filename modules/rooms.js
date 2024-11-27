@@ -1,0 +1,33 @@
+
+export const rooms = [
+    {
+        roomName: 'Gaia.',
+        roomID: 0,
+        roomImage: './rooms/hotelroom-gaia-mobile.avif',
+        roomDescription: 'The Gaia Room is a serene retreat designed for two, featuring a luxurious king-size bed adorned with sustainable, organic linens. ',
+        maxGuests: 2,
+        bathtub: true,
+        doubleBed: true,
+        balcony: false,
+    },
+    {
+        roomName: 'Luna.',
+        roomID: 1,
+        roomImage: './rooms/hotelroom-luna-mobile.avif',
+        roomDescription: 'The Luna Room is a cozy, eco-friendly haven designed for two, featuring two plush twin beds with sustainable bedding. The room offers minimalist decor crafted from natural materials',
+        maxGuests: 2,
+        bathtub: true,
+        doubleBed: false,
+        balcony: false,
+    },
+    {
+        roomName: 'Aura.',
+        roomID: 2,
+        roomImage: './rooms/hotelroom-aura-mobile.avif',
+        roomDescription: 'The Aura Room is a tranquil escape for two, featuring a luxurious queen-size bed with eco-conscious linens and a private balcony overlooking the lush forest.',
+        maxGuests: 2,
+        bathtub: false,
+        doubleBed: true,
+        balcony: true,
+    }, 
+]
