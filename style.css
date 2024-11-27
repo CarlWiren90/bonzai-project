@@ -304,3 +304,51 @@ body {
   color: var(--blue);
   text-align: center;
 }
+
+.content--booking {
+  text-align: left;
+  grid-area: booking;
+  min-height: 80vh;
+  background-color: var(--white);
+  padding: 4em 2em 0 2em;
+}
+
+.booking {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.7rem;
+  gap: 1.6em;
+  height: 100%;
+}
+
+.booking__check-in, .booking__check-out, .booking__guests {
+  display: flex;
+  flex-direction: column;
+  gap:0.3em;
+}
+
+#check-in-date, #check-out-date, #guests {
+  width: 10em;
+  height: 2em;
+  font-size: 1.6rem;
+  border: 2px solid black;
+  padding-left: 0.2em;
+}
+
+#booking__guests-content, #booking__guests-check-out-date, #booking__guests-check-in-date {
+  font-size: 1rem;
+}
+
+#guests {
+  appearance: none;
+}
+
+.button--booking {
+  position: relative;
+  border: none;
+  background-color: var(--blue);
+  padding: 0;
+  margin: 0;
+  font-size: 1.8rem;
+}
