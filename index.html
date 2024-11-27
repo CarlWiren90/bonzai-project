@@ -7,7 +7,6 @@
     <title>Bonzai Hotel</title>
   </head>
   <body>
-
     <header class="header">
       <div class="header__logo">
         <a class="header__link" href="#" aria-label="Go to Bonzai homepage">
@@ -101,14 +100,14 @@
           <h3 class="booking__check-in-heading">
             Check-in date
           </h3>
-          <label for="check-in-date" id="booking__guests-check-in-date">Date for check-in</label>
+          <label for="check-in-date" id="booking__guests-check-in-date">Date of arrival</label>
           <input type="date" id="check-in-date"/>
         </section> 
           <section class="booking__check-out">
             <h3 class="booking__check-out-heading">
               Check-out date
             </h3>
-            <label for="check-out-date" id="booking__guests-check-out-date">Date for check-out</label>
+            <label for="check-out-date" id="booking__guests-check-out-date">Date of departure</label>
             <input type="date" id="check-out-date"/>
         </section>
         <section class="booking__guests">
@@ -123,11 +122,39 @@
             <option value="4">4</option>
           </select>
       </section>
-      <button class="button button--booking" type="submit">Find a room!</button>
+      <button class="button button--booking"  href="#room-display">Find a room!</button>
     </section>
+  </section>
 
+  <section class="content content--room-display" id="room-display">
+    <section class="room-display">
+      <h3 class="room-display__heading">
+        Available rooms.
+      </h3>
+      <p class="room-display__heading-content">
+        For the selected dates
+      </p>
+      <section class="room-display__room-list">
 
+      </section>
+    </section>
+  </section>  
 
+    <section class="content content--contact">
+      <section class="contact">
+        <h3 class="contact__heading">
+          Contact us.
+        </h3>
+        <p class="contact__heading-content-adress">
+          <span class="adress">Adress:<br></span>
+          Bonzai Hotel<br>Verdant Avenue<br>Green Horizon District,<br>Newleaf City, NL
+        </p>
+        <p class="contact__heading-content-adress">
+          <span class="email">Email:<br></span>
+          hello@bonzaihotel.com
+        </p>
+      </section>
+    </section>
 <!--     <script type="module" src="/main.js"></script>
  -->  
 </body>
