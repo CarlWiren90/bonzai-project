@@ -15,6 +15,7 @@
 }
 
 body {
+  overflow-x: hidden;
   background-color: black;
   width: 100%;
   min-height: 100vh;
@@ -158,11 +159,22 @@ body {
   width: 40px;
 }
 
-.innovation {
+.content {
   font-family: 'Altone Trial';
-  grid-area: innovation;
-  min-height: 100vh;
   background-color: var(--white);
+  text-align: center;
+}
+
+.content--innovation {
+  grid-area: innovation;
+  min-height: 70vh;
+}
+
+.innovation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5em;
 }
 
 .innovation__heading {
@@ -174,5 +186,51 @@ body {
 }
 
 .innovation__heading-sustainability {
-  color: var(--blue)
+  color: var(--blue); 
 }
+
+.innovation__heading-join-us {
+  font-size: 1.2em;
+  font-weight: 300;
+}
+
+.innovation__heading-care {
+  font-weight: 600;
+}
+
+.image-container {
+  width: 24em;
+  height: 18em;
+}
+
+.innovation__image {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+}
+
+ .content--experience {
+  grid-area: experience;
+  min-height: 70vh;
+  background-color: var(--green);
+  padding: 2em 1.5em 0 1.5em;
+ }
+
+ .experience {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+ }
+
+ .experience__heading {
+  font-size: 2.7rem;
+  text-align: left;
+  color: var(--blue);
+ }
+
+ .experience__heading-content {
+  font-size: 1.3em;
+  font-weight: 300;
+  text-align: left;
+  color: var(--white);
+ }
