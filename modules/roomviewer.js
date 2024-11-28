@@ -67,3 +67,23 @@ const createRoomFooter = (room) => {
     roomFooter.appendChild(bookButton);
     return roomFooter;
 }
+
+export const setCheckInDate = () => {
+    const date = getDate().toISOString().split('T')[0];
+    const inputCheckIn = document.getElementById('check-in-date');
+    inputCheckIn.value = date;
+}
+
+export const setCheckOutDate = () => {
+    const date = getDate();
+    date.setDate(date.getDate() + 1);
+    const formattedDate = date.toISOString().split('T')[0];
+    const inputCheckOut = document.getElementById('check-out-date');
+    inputCheckOut.value = formattedDate;
+    console.log(date);
+}
+
+const getDate = () => {
+    const todaysDate = new Date();
+    return todaysDate;
+}
