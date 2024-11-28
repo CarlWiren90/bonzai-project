@@ -3,10 +3,67 @@ import { rooms } from "./rooms";
 const roomList = document.querySelector('.room-display__room-list');
 
 export const renderRoomList = () => {
-    console.log('hej')
+    renderRooms();
+}
+
+const renderRooms = () => {
     rooms.forEach((room) => {
+        //Creates room containers
         const roomItemContainer = document.createElement('section');
-        roomItemContainer.classList.add('room-display__room-item');
+        roomItemContainer.classList.add('room-display__room-item', 'room-display__room-item' + room.roomID);
         roomList.appendChild(roomItemContainer);
-    }) 
+
+        //Appends room image to item
+        const roomImage = createRoomItemImage(room)
+        roomItemContainer.appendChild(roomImage);
+
+        //Appends room header
+        const roomHeader = createRoomHeader(room); 
+        roomItemContainer.appendChild(roomHeader);
+
+        //Appends room description
+        const roomDescription = createRoomDescription(room)
+        roomItemContainer.appendChild(roomDescription);
+
+        //Appends room footer w price and button
+        const roomFooter = createRoomFooter(room);
+        roomItemContainer.appendChild(roomFooter);
+    })
+}
+
+const createRoomItemImage = (room) => {
+    const roomItemImage = document.createElement('img');
+    roomItemImage.classList.add('room-display__image', 'room-display__image' + room.roomID);
+    roomItemImage.src = room.roomImage;
+    return roomItemImage;
+}
+
+const createRoomHeader = (room) => {
+    const roomHeader = document.createElement('section');
+    roomHeader.classList.add('room-display__header')
+    roomHeader.innerText = room.roomName;
+    return roomHeader;
+}
+
+const createRoomDescription = (room) => {
+    const roomDescription = document.createElement('section');
+    roomDescription.classList.add('room-display__description');
+    roomDescription.innerText = room.roomDescription;
+    return roomDescription;
+}
+
+const createRoomFooter = (room) => {
+    const roomFooter = document.createElement('section');
+    roomFooter.classList.add('room-display__footer');
+
+    const roomPrice = document.createElement('p');
+    roomPrice.classList.add('room-display__price');
+    roomPrice.innerText = room.roomPrice + ' €'
+    roomFooter.appendChild(roomPrice);
+
+    const bookButton = document.createElement('button');
+    bookButton.classList.add('button', 'button--booking');
+    bookButton.innerText = 'Book now'
+    roomFooter.appendChild(bookButton);
+    return roomFooter;
 }
