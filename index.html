@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="The worlds first AI-driven ECO-living hotel where you'll experience the marriage between innovation and sustainability.">
     <title>Bonzai Hotel</title>
   </head>
   <body>
@@ -13,24 +14,38 @@
           <img class="header__image" src="./bonzai-logo.avif" alt="Bonzai Logo"/>
         </a>
       </div>  
+
+      <!-- For mobile use -->
+       <nav class="header__navbar header__navbar--mobile">
+        <a class="header__menu-toggle" aria-label="Open mobile menu">
+          <img class="header__menu-icon" src="menu-hamburger.avif" alt="Menu icon"/>
+        </a>
+       </nav>
+
+       <!-- For desktop use -->
+        <nav class="header__navbar header__navbar--desktop">
+          <a class="header__navbar-link">Book your stay</a>
+          <a class="header__navbar-link">Our vision</a>
+          <a class="header__navbar-link">Contact us</a>
+        </nav>
     </header>
 
     <section class="hero">
       <img class="hero__image" src='./hero-image-desktop.avif' alt="A cozy view of a Bonzai hotel rooom"/>
         <h1 class="hero__heading">
-          <span class="hero__heading-experience">Experience</span>
-          <span class="hero__heading-bonzai">Bonzai.</span>
+          <span class="hero__experience">Experience</span>
+          <span class="hero__bonzai">Bonzai.</span>
         </h1>
-        <h2 class="hero__heading-slogan">
-          THE WORLDS FIRST AI DRIVEN <span class="hero__heading--slogan--blue">ECO LIVING.</span>
+        <h2 class="hero__slogan">
+          THE WORLDS FIRST AI DRIVEN <span class="hero__slogan-highlight">ECO LIVING.</span>
         </h2>
 
       <button class="button button--hero" id="button--hero" aria-label="Book your stay" href="#">Book your stay</button>
       
-      <div class="hero__learn-more-wrapper">
+      <div class="hero__wrapper">
         <p class="hero__learn-more">Learn more</p>
         <a class="hero__link">
-          <img class="hero__learn-more-image" id="hero__learn-more-image" src="./scroll-down-image.avif" alt="Scroll down to learn more"/>
+          <img class="hero__learn-more-icon" id="hero__learn-more-image" src="./scroll-down-image.avif" alt="Scroll down to learn more"/>
         </a>
       </div>     
     </section>
@@ -156,7 +171,6 @@
       </section>
     </section>
     <script type="module" src="/main.js"></script>
-  
 </body>
 </html>
 
