@@ -201,7 +201,7 @@ body {
   padding-top: 1em;
 }
 
-.innovation__heading-sustainability {
+.innovation__heading--highlight {
   color: var(--blue); 
 }
 
@@ -214,7 +214,7 @@ body {
   font-weight: 600;
 }
 
-.image-container {
+.image__container {
   width: 24em;
   height: 18em;
 }
@@ -530,7 +530,7 @@ body {
   .header__navbar-link {
     font-family: 'Altone Trial';
     font-size: 1.5rem;
-    color: var(--white);
+    color: var(--blue);
     margin-right:7% ;
   }
 
@@ -556,6 +556,33 @@ body {
   }
 
   .button--hero {
-    margin: 5em 0 0 5.7em;
+    margin: 7em 0 0 5.7em;
+  }
+
+  .innovation {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    gap: 0;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .heading__container--innovation {
+    text-align: left;
+    grid-column: 1;
+    width: 100%;
+    height: 100%;
+  }
+
+  .image__container--innovation {
+    grid-column: 2;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .innovation__heading {
+    text-align: left;
   }
 }
