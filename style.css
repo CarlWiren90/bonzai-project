@@ -330,6 +330,7 @@ body {
 }
 
 #check-in-date, #check-out-date, #guests {
+  font-family: 'Poppins';
   width: 13em;
   height: 2em;
   font-size: 1.5rem;
@@ -428,8 +429,10 @@ body {
 }
 
 .button--booking {
-  margin: 0em 1em 0 0.5em;
-  width: 6em;
+  margin: 0em 0em 0 0em;
+  width: 7em;
+  font-size: 1.7rem;
+
 }
 
 .room-display__price {
