@@ -58,7 +58,7 @@ body {
 
 .header__logo {
   width: 50px;
-  height: 50px;
+  height: auto;
 }
 
 .header__image {
@@ -72,7 +72,7 @@ body {
 
 .header__menu-icon {
   width: 60px;
-  height: 60px;
+  height: auto;
 }
 
 .hero {
@@ -595,7 +595,6 @@ body {
     display: flex;
     flex-direction: column;
     gap: 2em;
-    padding-bottom:4.5em;
 
   }
 
@@ -622,7 +621,7 @@ body {
   /* Experience-section */
 
   .content--experience {
-    height: 60vh;
+    min-height: 60vh;
     padding: 0;
   }
 
@@ -643,7 +642,6 @@ body {
     min-width: 100%;
     max-height: 100%;
     gap: 2em;
-    padding-bottom:3em;
   }
 
   .experience__heading {
@@ -673,6 +671,121 @@ body {
     grid-row: 1;
     width: 26em;
     height: 22em;
+  }
+
+  /* Responsibility-section */
+
+  .content--responsibility {
+    min-height: 60vh;
+    padding: 0;
+  }
+
+  .responsibility {
+    display: grid;
+    width: 100%;
+    gap: 15.5em;
+    height: 100%;
+    padding: 0 9em 0 9em;
+    align-items: center;
+  }
+
+  .heading__container--responsibility {
+    display: grid;
+    text-align: right;
+    grid-column: 1;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 100%;
+    gap: 2em;
+  }
+
+  .responsibility__heading {
+    text-align: left;
+    padding: 0;
+    width: 80%;
+    font-size: 3.5rem;
+    }
+
+  .responsibility__heading-content {
+    text-align: left;
+    width: 100%;
+    font-size: 1.7rem;
+  }
+
+  .image__container--responsibility {
+    display: grid;
+    grid-column: 2;
+    grid-row: 1;
+    width: 26em;
+    height: 22em;
+    align-items: center;
+  }
+
+  .responsibility__image {
+    grid-column: 1;
+    grid-row: 1;
+    width: 26em;
+    height: 22em;
+  }
+
+  /* Footprint-section */
+
+  .content--footprint {
+    min-height: 60vh;
+    height: 75vh;
+    padding: 0;
+  }
+
+  .footprint {
+    display: grid;
+    width: 100%;
+    gap: 15.5em;
+    height: 60vh;
+    padding: 0 9em 0 9em;
+    align-items: center;
+  }
+
+  .heading__container--footprint {
+    display: grid;
+    text-align: right;
+    grid-column: 2;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 100%;
+    gap: 2em;
+  }
+
+  .footprint__heading {
+    text-align: left;
+    padding: 0;
+    width: 80%;
+    font-size: 3.5rem;
+    }
+
+  .footprint__heading-content {
+    text-align: left;
+    width: 100%;
+    font-size: 1.7rem;
+  }
+
+  .image__container--footprint {
+    display: grid;
+    grid-column: 1;
+    grid-row: 1;
+    width: 26em;
+    height: 22em;
+    align-items: center;
+  }
+
+  .footprint__image {
+    grid-column: 1;
+    grid-row: 1;
+    width: 26em;
+    height: 22em;
+  }
+
+  .footprint__heading-booking {
+    font-size: 3rem;
   }
 }
 
