@@ -227,7 +227,7 @@ body {
 
  .content--experience {
   grid-area: experience;
-  height: 70vh;
+  min-height: 70vh;
   background-color: var(--green);
   padding: 2em 1.5em 0 1.5em;
  }
@@ -237,6 +237,7 @@ body {
   flex-direction: column;
   gap: 2em;
   text-align: left;
+
  }
 
  .experience__heading {
@@ -522,7 +523,6 @@ body {
     grid-template-rows: auto ;
   }
 
-  /* Header and Hero-section */
   .header__navbar--mobile {
     display: none;
   }
@@ -574,10 +574,8 @@ body {
 
   /* Innovation-section */
 
-  /* Innovation section */
   .content--innovation {
     height: 60vh;
-    padding: 0;
   }
 
   .innovation {
@@ -598,6 +596,7 @@ body {
     flex-direction: column;
     gap: 2em;
     padding-bottom:4.5em;
+
   }
 
   .innovation__heading {
@@ -620,9 +619,9 @@ body {
     height: 22em;
   }
 
-  /* Experience section */
+  /* Experience-section */
+
   .content--experience {
-    display: grid;
     height: 60vh;
     padding: 0;
   }
@@ -630,43 +629,50 @@ body {
   .experience {
     display: grid;
     width: 100%;
-    gap: 0;
+    gap: 15.5em;
     height: 100%;
     padding: 0 9em 0 9em;
-    margin: 0;
-    justify-content: center;
     align-items: center;
   }
 
   .heading__container--experience {
-    grid-row: 1;
-    text-align: left;
+    display: grid;
+    text-align: right;
     grid-column: 2;
-    width:100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 100%;
     gap: 2em;
-    padding-top: 2.5em;
-    padding-right: 2.5em;
+    padding-bottom:3em;
   }
 
   .experience__heading {
+    text-align: left;
     padding: 0;
-    width: 60%;
+    width: 80%;
     font-size: 3.5rem;
-  }
-  
+    }
+
   .experience__heading-content {
-    width: 60%;
+    text-align: left;
+    width: 100%;
     font-size: 1.7rem;
-    font-weight: 100;
   }
 
   .image__container--experience {
+    display: grid;
     grid-column: 1;
+    grid-row: 1;
+    width: 26em;
+    height: 22em;
+    align-items: center;
+  }
+
+  .experience__image {
+    grid-column: 1;
+    grid-row: 1;
     width: 26em;
     height: 22em;
   }
 }
+
