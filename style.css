@@ -812,5 +812,56 @@ body {
     grid-row: 2;
     align-self: flex-start;
   }  
+
+  /* Room-display section */
+
+  .content--room-display {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 3em 9em 0 9em;
+  }
+
+  .room-display {
+    gap: 2em;
+  }
+
+  .room-display__room-list {
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+  }
+
+  .heading__container--room-display {
+    grid-column: 2;
+  }
+
+  .room-display__room-item {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 1em 0;
+    margin: 0;
+    gap: 0;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .room-display__footer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .button--booking {
+    align-self: flex-end;
+  }
+
+  .room-display__price {
+    padding-bottom: 0.1em;
+  }
 }
 
