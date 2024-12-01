@@ -890,5 +890,31 @@ body {
   .room-display__price {
     padding-bottom: 0.1em;
   }
+
+  /* Contact-section */
+
+  .content--contact {
+    padding: 0.5em 3.8em 0 3.8em;
+    height: 50vh;
+  }
+  .contact {
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .contact__heading {
+    font-size: 3.5rem;
+  }
+
+  .contact__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contact__heading-content-adress {
+    font-family: 'Poppins';
+    font-family: 1.7rem;
+  }
 }
 
