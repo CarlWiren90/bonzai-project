@@ -41,18 +41,23 @@ body {
   grid-area: header;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: var(--standard-padding);
   width: 100%;
   min-height: 3.7em;
   background-color: transparent;
-  position:fixed;
+  position: absolute;
   z-index: 999;
   backdrop-filter: blur(5px);
-  justify-content: space-between;
+  -webkit-backdrop-filter: blur(5px);
 }
 
 .header__navbar {
   height: 100%;
+  width: 100%;
+}
+
+.header__navbar--mobile {
   width: 100%;
 }
 
@@ -68,6 +73,7 @@ body {
 
 .header__navbar--desktop {
   display: none;
+  width: 100%;
 }
 
 .header__menu-icon {
@@ -193,6 +199,12 @@ body {
   gap: 2.5em;
 }
 
+.heading__container {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
 .innovation__heading {
   font-size: 2.7rem;
   text-align: center;
@@ -235,7 +247,7 @@ body {
  .experience {
   display: flex;
   flex-direction: column;
-  gap: 2em;
+  gap: 2.5em;
   text-align: left;
 
  }
@@ -260,6 +272,7 @@ body {
 
 .content--responsibility {
   grid-area: responsibility;
+  height: 70vh;
   min-height: 70vh;
   background-color: var(--white);
   padding: 2em 1.5em 0 1.5em;
@@ -268,7 +281,7 @@ body {
 .responsibility {
   display: flex;
   flex-direction: column;
-  gap: 2em;
+  gap: 2.5em;
   text-align: left;
 }
 
@@ -332,6 +345,7 @@ body {
   font-size: 2.7rem;
   color: var(--blue);
   text-align: center;
+  padding-top: 1em;
 }
 
 .content--booking {
@@ -351,9 +365,10 @@ body {
   height: 100%;
 }
 
-.booking__check-in, .booking__check-out, .booking__guests {
+.booking__input {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap:0.3em;
 }
 
@@ -414,6 +429,7 @@ body {
 .room-display__room-list {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap:3em;
   min-height: 30vh;
   margin-bottom: 4em;
@@ -421,6 +437,7 @@ body {
 
 .room-display__room-item {
   width: 100%;
+  max-width: 24em;
   min-height: 30em;
   background-color: var(--white);
   border-radius: 16px;
@@ -482,7 +499,7 @@ body {
   grid-area: contact;
   min-height: 40vh;
   background-color: var(--white);
-  padding: 0.5em 2em 0 0.5em;
+  padding: 1em 2em 0 0.5em;
   font-size: 2.3rem;
 }
 
@@ -490,7 +507,6 @@ body {
   max-width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 0.5em;
 }
 
 .contact__heading {
@@ -501,14 +517,21 @@ body {
   font-weight: 600;
 }
 .contact__heading-content-adress {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Poppins';
   font-size: 1.6rem;
   width: 12em;
-  padding-left: 0.2em;
+  padding-left: 0.1em;
+  padding-top: 1em;
 }
 
 
 @media (min-width: 1025px) and (max-width: 1440px) {
+
   body {
+    padding: 0;
+    margin:0;
     overflow-x: hidden;
     scroll-behavior: smooth;
     background-color:var(--white);
@@ -531,8 +554,15 @@ body {
     grid-template-rows: auto ;
   }
 
+  .header {
+    width: 100%;
+    overflow: hidden;
+    width: 100%;
+    margin: 0; 
+  }
   .header__navbar--mobile {
     display: none;
+    width: 100%;
   }
 
   .header__navbar {
@@ -546,12 +576,13 @@ body {
     height: 3.5em;
     justify-content: center;
     gap: 5em;
+    width: 100%;
   }
 
   .header__navbar-link {
     font-family: 'Altone Trial';
     font-size: 1.5rem;
-    color: var(--blue);
+    color: var(--white);
     margin-right:7% ;
   }
 
@@ -795,6 +826,7 @@ body {
 
   .footprint__heading-booking {
     font-size: 3.5rem;
+    padding: 0;
   }
 
   /* Booking-section */
@@ -869,7 +901,8 @@ body {
     margin: 0;
     gap: 0;
     height: 100%;
-    width: 100%;
+    max-width: 25em;
+    min-width: 10em;
     justify-content: space-between;
   }
 
