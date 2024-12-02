@@ -667,7 +667,6 @@ body {
   .experience {
     display: grid;
     width: 100%;
-    gap: 15.5em;
     height: 100%;
     padding: 0 9em 0 9em;
     align-items: center;
@@ -680,7 +679,7 @@ body {
     max-width: 100%;
     min-width: 100%;
     max-height: 100%;
-    gap: 2em;
+    gap: 2rem;
   }
 
   .experience__heading {
@@ -722,8 +721,8 @@ body {
   .responsibility {
     display: grid;
     width: 100%;
-    gap: 15.5em;
-    height: 100%;
+/*     gap: 15.5em;
+ */    height: 100%;
     padding: 0 9em 0 9em;
     align-items: center;
   }
@@ -779,8 +778,8 @@ body {
   .footprint {
     display: grid;
     width: 100%;
-    gap: 15.5em;
-    height: 60vh;
+/*     gap: 15.5em;
+ */    height: 60vh;
     padding: 0 9em 0 9em;
     align-items: center;
   }
