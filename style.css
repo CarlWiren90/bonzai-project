@@ -189,7 +189,7 @@ body {
 
 .content--innovation {
   grid-area: innovation;
-  height: 70vh;
+  height: 60vh;
 }
 
 .innovation {
@@ -925,6 +925,7 @@ body {
 
   .button--booking {
     align-self: flex-end;
+    width: 60%;
   }
 
   .room-display__price {
@@ -974,8 +975,7 @@ body {
     align-items: center;
     height: 3.5em;
     justify-content: center;
-    gap: 5em;
-    width: 100%;
+    max-width: 100%;
   }
 
   .header__navbar-link {
@@ -983,6 +983,31 @@ body {
     font-size: 1.2rem;
     color: var(--white);
     margin-right:10% ;
+  }
+
+  .hero__heading {
+    padding: 0 11.7em 8em 0;
+    width: 30em;
+    line-height: 4.1rem;
+  }
+
+  .hero__experience {
+      font-size: 3rem;
+      color: var(--white);
+      padding: 0 0.7em 0 0em;
+  }
+
+  .hero__bonzai {
+    font-size: 6.5rem;
+  }
+  
+  .hero__slogan {
+    padding: 0 0 0 3em;
+    width: 28em;
+  }
+
+  .button--hero {
+    margin: 7em 0 0 3em;
   }
 
   .content {
@@ -1016,6 +1041,74 @@ body {
   }
 }
 
+@media (min-width: 567px) and (max-width: 767px) {
+  .header__navbar--mobile {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .header__navbar {
+    height: 100%;
+    width: 100%;
+  }
+
+  .header__navbar--desktop {
+    display: none;
+  }
+
+  .hero__heading {
+    width: 48%;
+    min-width: 40%;
+    line-height: 4.1rem;
+    padding-left: 3em;
+  }
+
+  .hero__experience {
+      font-size: 3rem;
+      color: var(--white);
+      padding-right: 0.7em;
+  }
+
+  .hero__bonzai {
+    font-size: 6.5rem;
+  }
+  
+  .hero__slogan {
+/*     position: absolute;
+ */    margin: 10em 0 10em 0.5em;
+    min-width: 80%;
+  }
+
+  .button--hero {
+    margin: 7em 0 0 3em;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .innovation, .experience, .responsibility, .footprint {
+    align-items: center;
+  }
+
+  .content--footprint {
+    height: 75vh;
+  }
+
+  .content--room-display {
+    height: auto;
+  }
+
+  .heading__container {
+    text-align: center;
+  }
+}
+
+
+
 @media screen and (max-width: 429px) {
   .body {
     width: 100%;
@@ -1042,7 +1135,7 @@ body {
 
   .content {
     padding: 1.5em 1em 0 1em;
-    height:100vh;
+    height:70vh;
     width: 100vw;  
   }
 
@@ -1069,7 +1162,7 @@ body {
 
   .content--contact {
     padding: 0.5em 0.5em 0 0.5em;
-    height: 80vh;
+    height: 60vh;
   }
 }
 
