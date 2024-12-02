@@ -188,20 +188,12 @@ body {
 .content {
   font-family: 'Altone Trial';
   background-color: var(--white);
-  text-align: center;
-}
-
-.content--innovation {
-  grid-area: innovation;
-  height: 65vh;
-  
-}
-
-.innovation {
+  height: 70vh; 
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2.5em;
+  padding: 0 1.5em 0 1.5em;
 }
 
 .heading__container {
@@ -210,169 +202,125 @@ body {
   gap: 1em;
 }
 
-.innovation__heading {
+.content__heading {
   font-size: 2.7rem;
-  text-align: center;
+  text-align: left;
   color: var(--black);
   letter-spacing: -2px;
   padding-top: 1em;
+}
+
+.content__info {
+  font-size: 1.3em;
+  font-weight: 300;
+  text-align: left;
+}
+
+.content__image-container {
+  width: 24em;
+  height: 18em;
+}
+
+.content__image {
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+}
+
+/* innovation */
+
+.content--innovation {
+  grid-area: innovation;
+  padding: 0;
+}
+
+.content__heading--innovation {
+  text-align: center;
+}
+
+.content__info--innovation {
+  text-align: center;
 }
 
 .innovation__heading--highlight {
   color: var(--blue); 
 }
 
-.innovation__heading-content {
-  font-size: 1.2em;
-  font-weight: 300;
-}
-
 .innovation__heading-care {
   font-weight: 600;
 }
 
-.image__container {
-  width: 24em;
-  height: 18em;
-}
-
-.innovation__image {
-  width: 100%;
-  height: 100%;
-  border-radius: 16px;
-}
+/* Experience */
 
  .content--experience {
   grid-area: experience;
-  height: 70vh;
   background-color: var(--green);
-  padding: 2em 1.5em 0 1.5em;
  }
 
- .experience {
-  display: flex;
-  flex-direction: column;
-  gap: 2.5em;
-  text-align: left;
-
- }
-
- .experience__heading {
+ .content__heading--experience {
   font-size: 2.7rem;
   color: var(--blue);
+  text-align: left;
  }
 
- .experience__heading-content {
+ .content__info--experience {
   font-size: 1.3em;
-  font-weight: 300;
   color: var(--white);
-  
  }
 
- .experience__image {
-  width: 100%;
-  height: 100%;
-  border-radius: 16px;
-}
+/* Responsibility */
 
 .content--responsibility {
   grid-area: responsibility;
-  height: 70vh;
-  background-color: var(--white);
-  padding: 2em 1.5em 0 1.5em;
 }
 
-.responsibility {
-  display: flex;
-  flex-direction: column;
-  gap: 2.5em;
-  text-align: left;
-}
-
-.responsibility__heading {
-  font-size: 2.7rem;
+.content__heading--responsibility {
   color: var(--black);
 }
 
-.responsibility__heading-content {
+.content__info--responsibility {
   font-size: 1.3em;
   color: var(--black);
-  font-weight: 300;
 }
 
-.responsibility__image {
-  width: 100%;
-  height: 100%;
-  border-radius: 16px;
-}
+/* Footprint */
 
 .content--footprint {
   grid-area: footprint;
-  height: 80vh;
+  height: 100vh;
   background-color: var(--green);
-  padding: 2em 1.5em 0 1.5em;
   border-bottom-left-radius: 100px;
   border-bottom-right-radius: 100px;
-
 }
 
-.footprint {
-  display: flex;
-  flex-direction: column;
-  gap: 2em;
-  text-align: left;
-}
-
-.footprint__heading {
-  font-size: 2.7rem;
+.content__heading--footprint {
   color: var(--blue);
 }
 
-.footprint__heading-content {
-  font-size: 1.3rem;
+.content__info--footprint {
   color: var(--white);
-  font-weight: 300;
 }
 
-.footprint__image {
-  width: 100%;
-  height: 100%;
-  border-radius: 16px;
-}
-
-.footprint__heading-content--neutral {
-  font-weight:300;
-}
-
-
-.footprint__heading-booking {
-  font-size: 2.7rem;
+.content__heading--booking {
+  font-size: 2rem;
   color: var(--blue);
   text-align: center;
-  padding-top: 1em;
 }
+
+/* Booking */
 
 .content--booking {
-  text-align: left;
   grid-area: booking;
-  min-height: 80vh;
-  background-color: var(--white);
-  padding: 4em 2em 0 2em;
-}
-
-.booking {
+  font-size: 1.4rem;
+  align-items: center;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  font-size: 1.4rem;
-  gap: 1.6em;
-  height: 100%;
+
 }
 
 .booking__input {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   gap:0.3em;
 }
 
@@ -394,8 +342,8 @@ body {
   position: relative;
   border: none;
   background-color: var(--blue);
-  margin: 1.5em 0 0 0;
-  font-size: 1.8rem;
+/*   margin: 1.5em 0 0 0;
+ */  font-size: 1.8rem;
 }
 
 .button--booking {
@@ -405,6 +353,8 @@ body {
   margin: 1.5em 0 0 0;
   font-size: 1.8rem;
 }
+
+/* Room display */
 
 .content--room-display {
   text-align: center;
