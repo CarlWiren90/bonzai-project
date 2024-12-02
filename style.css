@@ -835,6 +835,7 @@ body {
     padding: 0;
     min-height: 50vh;
     align-items: center;
+    justify-content: center;
   }
 
   .booking {
@@ -874,7 +875,7 @@ body {
   /* Room-display section */
 
   .content--room-display {
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     padding: 3em 9em 0 9em;
@@ -886,7 +887,8 @@ body {
 
   .room-display__room-list {
     display: grid;
-    grid-template-columns:  1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
+    
   }
 
   .heading__container--room-display {
@@ -896,15 +898,14 @@ body {
   .room-display__room-item {
     display: flex;
     flex-direction: column;
-    padding: 0 0 1em 0;
-    margin: 0;
-    gap: 0;
+    padding: 1em;
+    background: #f0f0f0;
+    border: 1px solid #ccc;
     height: 100%;
-    max-width: 25em;
-    min-width: 10em;
-    justify-content: space-between;
+    max-width: 25em; 
+    min-width: 20em; 
+    
   }
-
   .room-display__footer {
     display: flex;
     flex-direction: row;
@@ -950,7 +951,11 @@ body {
   }
 }
 
-@media screen and (max-width: 430px) {
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+}
+
+@media screen and (max-width: 429px) {
   .body {
     width: 100%;
     overflow-x: hidden;
