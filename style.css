@@ -239,7 +239,7 @@ body {
 
  .content--experience {
   grid-area: experience;
-  min-height: 70vh;
+  height: 70vh;
   background-color: var(--green);
   padding: 2em 1.5em 0 1.5em;
  }
@@ -273,7 +273,6 @@ body {
 .content--responsibility {
   grid-area: responsibility;
   height: 70vh;
-  min-height: 70vh;
   background-color: var(--white);
   padding: 2em 1.5em 0 1.5em;
 }
@@ -304,7 +303,7 @@ body {
 
 .content--footprint {
   grid-area: footprint;
-  min-height: 80vh;
+  height: 80vh;
   background-color: var(--green);
   padding: 2em 1.5em 0 1.5em;
   border-bottom-left-radius: 100px;
@@ -614,39 +613,42 @@ body {
   /* Innovation-section */
 
   .content--innovation {
+    display: flex;
     height: 60vh;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
   }
 
   .innovation {
+    
     display: grid;
-    width: 100%;
-    gap: 0;
+    width: 80%;
     height: 100%;
-    padding: 0 9em 0 9em;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
   }
 
   .heading__container--innovation {
-    text-align: left;
+    text-align: right;
     grid-column: 1;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
+    max-width: 100%;
+    max-height: 100%;
     gap: 2em;
-
+    justify-self: center;
   }
 
   .innovation__heading {
     text-align: left;
     padding: 0;
-    width: 80%;
+    max-width: 100%;
     font-size: 3.5rem;
     }
 
   .innovation__heading-content {
     text-align: left;
-    width: 80%;
+    max-width: 80%;
     font-size: 1.7rem;
 
   }
@@ -655,31 +657,36 @@ body {
     grid-column: 2;
     width: 26em;
     height: 22em;
+    justify-self: right;
   }
 
   /* Experience-section */
 
   .content--experience {
-    min-height: 60vh;
+    display: flex;
+    height: 60vh;
     padding: 0;
+    align-items: center;
+    justify-content: center;
+
   }
 
   .experience {
     display: grid;
-    width: 100%;
+    width: 80%;
     height: 100%;
-    padding: 0 9em 0 9em;
     align-items: center;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
   }
 
   .heading__container--experience {
     display: grid;
-    text-align: right;
     grid-column: 2;
-    max-width: 100%;
-    min-width: 100%;
+    max-width: 80%;
     max-height: 100%;
-    gap: 2rem;
+    gap: 2em;
+    justify-self: right;
   }
 
   .experience__heading {
@@ -714,27 +721,30 @@ body {
   /* Responsibility-section */
 
   .content--responsibility {
-    min-height: 60vh;
+    display: flex;
+    height: 60vh;
     padding: 0;
+    align-items: center;
+    justify-content: center;
   }
 
   .responsibility {
     display: grid;
-    width: 100%;
-/*     gap: 15.5em;
- */    height: 100%;
-    padding: 0 9em 0 9em;
+    width: 80%;
+    height: 100%;
     align-items: center;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
   }
 
   .heading__container--responsibility {
     display: grid;
     text-align: right;
     grid-column: 1;
-    max-width: 100%;
-    min-width: 100%;
+    max-width: 65%;
     max-height: 100%;
     gap: 2em;
+    justify-self: left;
   }
 
   .responsibility__heading {
@@ -746,17 +756,15 @@ body {
 
   .responsibility__heading-content {
     text-align: left;
-    width: 100%;
+    max-width: 100%;
     font-size: 1.7rem;
   }
 
   .image__container--responsibility {
-    display: grid;
     grid-column: 2;
-    grid-row: 1;
     width: 26em;
     height: 22em;
-    align-items: center;
+    justify-self: right;
   }
 
   .responsibility__image {
@@ -769,29 +777,31 @@ body {
   /* Footprint-section */
 
   .content--footprint {
-    min-height: 60vh;
-    height: 75vh;
+    display: flex;
+    height: 70vh;
     padding: 0;
-    border-radius: 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
 
   .footprint {
     display: grid;
-    width: 100%;
-/*     gap: 15.5em;
- */    height: 60vh;
-    padding: 0 9em 0 9em;
+    width: 80%;
+    height: 100%;
     align-items: center;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
   }
 
   .heading__container--footprint {
     display: grid;
     text-align: right;
     grid-column: 2;
-    max-width: 100%;
-    min-width: 100%;
+    max-width: 80%;
     max-height: 100%;
     gap: 2em;
+    justify-self: right;
   }
 
   .footprint__heading {
@@ -803,17 +813,15 @@ body {
 
   .footprint__heading-content {
     text-align: left;
-    width: 100%;
+    max-width: 100%;
     font-size: 1.7rem;
   }
 
   .image__container--footprint {
-    display: grid;
     grid-column: 1;
     grid-row: 1;
     width: 26em;
     height: 22em;
-    align-items: center;
   }
 
   .footprint__image {
@@ -826,6 +834,7 @@ body {
   .footprint__heading-booking {
     font-size: 3.5rem;
     padding: 0;
+    padding-bottom: 1em;
   }
 
   /* Booking-section */
@@ -833,7 +842,7 @@ body {
   .content--booking {
     display: flex;
     padding: 0;
-    min-height: 50vh;
+    min-height: 60vh;
     align-items: center;
     justify-content: center;
   }
@@ -842,10 +851,9 @@ body {
     padding: 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 0 9em 0 9em;
     align-content: center;
-    width: 100%;
-    height: 100%;
+    justify-self: center;
+    max-width: 80%;
     padding-bottom: 5em;
   }
 
@@ -853,8 +861,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: left;
+    align-self: center;
   }
 
 
@@ -952,7 +959,61 @@ body {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  
+  .header__navbar--mobile {
+    display: none;
+    width: 100%;
+  }
+
+  .header__navbar {
+    height: 100%;
+    width: 100%;
+  }
+
+  .header__navbar--desktop {
+    display: flex;
+    align-items: center;
+    height: 3.5em;
+    justify-content: center;
+    gap: 5em;
+    width: 100%;
+  }
+
+  .header__navbar-link {
+    font-family: 'Altone Trial';
+    font-size: 1.2rem;
+    color: var(--white);
+    margin-right:10% ;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content--innovation, .content--experience, .content--responsibility, .content--footprint {
+    height: 65vh;
+  }
+
+  .innovation, .experience, .responsibility, .footprint {
+    align-items: center;
+  }
+
+  .content--footprint {
+    height: 75vh;
+  }
+
+  .content--room-display {
+    height: auto;
+  }
+
+  .heading__container {
+    text-align: center;
+  }
+
+  .image__container {
+    justify-self: center;
+  }
 }
 
 @media screen and (max-width: 429px) {
