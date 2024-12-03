@@ -371,11 +371,10 @@ body {
 
 .room-display__room-item {
   width: 100%;
-  max-width: 20em;
-  min-width: 24em;
-  min-height: 40em;
-/*   max-height: 35em;
- */  background-color: var(--white);
+  min-width: 22em;
+  max-width: 24em;
+  min-height: 35em;
+  background-color: var(--white);
   border-radius: 16px;
 }
 
@@ -520,7 +519,7 @@ body {
   .content {
     padding: 0 9em;
     gap: 4em;
-    max-height: 65vh;
+    height: 65vh;
   }
   
    .heading__container {
@@ -621,7 +620,7 @@ body {
   /* Footprint-section */
 
   .content--footprint {
-    height: 65vh;
+    height: 80vh;
     display: grid;
     grid-template-columns: 1fr 1fr; 
     grid-template-rows: 1fr 10% ; 
@@ -656,7 +655,7 @@ body {
 
   .content--booking {
     padding: 0;
-    height: 60vh;
+    height:65vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 0 9em;
@@ -680,17 +679,17 @@ body {
   /* Room-display section */
 
   .content--room-display {
-    min-height: 100vh;
-    height: auto;
-    gap: 2em;
-    padding: 0 9em 0 9em;
+    min-height: 100vh;   /* Ensure it's at least the height of the viewport */
+    height: auto;     
+    gap: 2em;            
+    padding: 0 9em;     
   }
 
   .room-display__room-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
-    width: 100%;  
-    height: 100%;  
+    grid-template-columns: repeat(auto-fit, minmax(24em, 1fr)); 
+    width: 100%; 
+    gap: 2em; 
   }
 
   .heading__container--room-display {
@@ -710,17 +709,15 @@ body {
     height: auto;
     max-height: 25em;
     flex-direction: column;
-    max-width: 35em; 
+    max-width: 25em; 
     min-width: 20em;  
+    justify-self: center;
   }
 
   .room-display__image {
     width: 100%;
     min-height: 50%;
     max-height: 50%;
-    object-fit: cover;
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
   }
 
   .room-display__description {
@@ -729,87 +726,63 @@ body {
   }
 
   .room-display__footer {
-    display: flex;
-    border-bottom-left-radius: 16px;
-    border-bottom-right-radius: 16px;
-    align-items: center;
-    padding: 0 1em 1em 1em;
-    justify-self: flex-end;
+   padding: 0 1em 1em 1em;
   }
   
   .button--booking {
-    margin: 0;
     width: 50%;
-    font-size: 1.7rem;
-  }
-
-  .room-display__price {
-    padding-bottom: 0.1em;
   }
 
   /* Contact-section */
 
   .content--contact {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     padding: 0.5em 3.8em 0 3.8em;
-    height: 30vh;
+    height: 50vh;
+    gap: 1em;
+    align-items: center;
   }
 
-  .contact__heading {
-    font-size: 3.5rem;
+  .content__heading--contact{
+    padding: 0;
+    text-align: center;
   }
 
   .contact__container {
     display: flex;
     justify-content: space-between;
-  }
-
-  .contact__heading-content-adress {
-    font-family: 'Poppins';
-    font-family: 1.7rem;
+    flex-direction: row;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+
   .header__navbar--mobile {
     display: none;
-    width: 100%;
-  }
-
-  .header__navbar {
-    height: 100%;
-    width: 100%;
-  }
+ }
 
   .header__navbar--desktop {
     display: flex;
     align-items: center;
-    height: 3.5em;
     justify-content: center;
-    max-width: 100%;
   }
 
   .header__navbar-link {
     font-family: 'Altone Trial';
     font-size: 1.2rem;
     color: var(--white);
-    margin-right:10% ;
+    margin-right:10%;
   }
 
   .hero__heading-container {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
     padding: 0 0 10em 7em;
   }
+
   .hero__heading {
-  
     width: 20em;
     line-height: 3.5rem;
   }
-
 
   .hero__bonzai {
     font-size: 7rem;
@@ -824,17 +797,19 @@ body {
   }
 
   .content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .content--innovation, .content--experience, .content--responsibility, .content--footprint {
     height: 65vh;
   }
+  
+  .heading__container {
+    width: 60%;
+  }
 
-  .innovation, .experience, .responsibility, .footprint {
-    align-items: center;
+  .content__heading {
+    text-align: center;
+  }
+
+  .content__info {
+    text-align: center;
   }
 
   .content--footprint {
@@ -845,47 +820,37 @@ body {
     height: auto;
   }
 
-  .heading__container {
-    text-align: center;
-  }
-
   .image__container {
     justify-self: center;
+  }
+
+  .content__heading--book-stay {
+    font-size: 3rem;
+  }
+
+  .booking__input {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact__container {
+    align-items: center;
+    text-align: center;
   }
 }
 
 @media (min-width: 567px) and (max-width: 767px) {
-  .header__navbar--mobile {
-    display: flex;
-    width: 100%;
-    justify-content: flex-end;
-  }
-
-  .header__navbar {
-    height: 100%;
-    width: 100%;
-  }
-
-  .header__navbar--desktop {
-    display: none;
-  }
-
   .hero__heading {
-    width: 48%;
-    min-width: 40%;
-    line-height: 4.1rem;
     padding-left: 3em;
   }
 
   .hero__heading-container {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
     padding: 0 0 10em 0em;
   }
+
   .hero__heading {
-  
     width: 20em;
     line-height: 3.5rem;
   }
@@ -903,26 +868,20 @@ body {
     margin: 8em 0 0 3.3em;
   }
 
-  .content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .innovation, .experience, .responsibility, .footprint {
-    align-items: center;
+  .heading__container {
+    max-width: 24em;
   }
 
   .content--footprint {
-    height: 75vh;
+    height: 80vh;
+  }
+
+  .content__heading--book-stay {
+    font-size: 3rem;
   }
 
   .content--room-display {
     height: auto;
-  }
-
-  .heading__container {
-    text-align: center;
   }
 }
 
@@ -1000,7 +959,7 @@ body {
     }
 
   .content {
-    height:100vh;
+    height:70vh;
     width: 100vw;  
   }
 
@@ -1013,9 +972,12 @@ body {
     padding: 1em 1em 0 1em;
   }
 
+  .room-display__room-item {
+    max-width: 70%;
+  }
 
   .content--footprint {
-    height: auto;
+    height: 80vh;
   }
 
   .content__heading--book-stay {
