@@ -2,7 +2,7 @@
   --standard-padding: 0 1em 0 1em;
   --white: #FDFDFD;
   --black: #333333;
-  --green: #094936;
+  --green: rgb(9, 73, 54);
   --blue: #55EABD;
   --altone-bold: 'Altone Trial', sans-serif;
   --altone-reg: 'Altone Trial Regular', sans-serif;
@@ -44,7 +44,7 @@ body {
   padding: var(--standard-padding);
   width: 100%;
   min-height: 3.7em;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.3 );
   position: fixed;
   z-index: 999;
   backdrop-filter: blur(5px);
@@ -371,7 +371,7 @@ body {
 
 .room-display__room-item {
   width: 100%;
-  min-width: 22em;
+  min-width: 18em;
   max-width: 24em;
   min-height: 35em;
   background-color: var(--white);
@@ -490,7 +490,7 @@ body {
 
   .header__navbar-link {
     font-family: 'Altone Trial';
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: var(--white);
     margin-right:7% ;
   }
@@ -770,7 +770,7 @@ body {
 
   .header__navbar-link {
     font-family: 'Altone Trial';
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: var(--white);
     margin-right:10%;
   }
@@ -806,14 +806,16 @@ body {
 
   .content__heading {
     text-align: center;
+    font-size: 3rem;
   }
 
   .content__info {
     text-align: center;
+    font-size: 1.7rem;
   }
 
   .content--footprint {
-    height: 75vh;
+    height: 85vh;
   }
 
   .content--room-display {
@@ -878,7 +880,15 @@ body {
   }
 
   .content--footprint {
-    height: 80vh;
+    height: 90vh;
+  }
+
+  .content__heading {
+    font-size: 3rem;
+  }
+
+  .content__info {
+    font-size: 1.7rem;
   }
 
   .content__heading--book-stay {
@@ -927,7 +937,7 @@ body {
   }
 
   .content--footprint {
-    height: 80vh;
+    height: 90vh;
   }
 
   
@@ -936,7 +946,7 @@ body {
   }
 
   .content__heading--book-stay {
-    font-size: 2.7rem;
+    font-size: 2.5rem;
   }
 
   .content--room-display {
@@ -985,7 +995,7 @@ body {
   }
 
   .content--footprint {
-    height: 80vh;  
+    height: 90vh;  
   }
 
   .content__heading--book-stay {
