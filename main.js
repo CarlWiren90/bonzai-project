@@ -9,7 +9,24 @@ setCheckInDate();
 setCheckOutDate();
 
 
+//Navbar listeners
+const bookYourStayNavbar = document.getElementById('book-your-stay');
+bookYourStayNavbar.addEventListener('click', () => {
+    document.getElementById('booking').scrollIntoView({behavior: 'smooth'});
+})
 
+const ourVisionNavbar = document.getElementById('our-vision');
+ourVisionNavbar.addEventListener('click', () => {
+    document.getElementById('innovation').scrollIntoView({behavior: 'smooth'});
+})
+
+const contactUsNavbar = document.getElementById('contact-us');
+contactUsNavbar.addEventListener('click', () => {
+    document.getElementById('contact').scrollIntoView({behavior: 'smooth'});
+})
+
+
+//Running content listeners
 const heroButton = document.getElementById('button--hero');
 heroButton.addEventListener('click', () => {
     document.getElementById('booking').scrollIntoView({behavior: 'smooth'});
@@ -25,6 +42,7 @@ learnMoreLink.addEventListener('click', () => {
     document.getElementById('innovation').scrollIntoView({behavior: 'smooth'});
 })
 
+//Hamburger toggle
 const header__menu = document.querySelector('.header__menu-toggle');
 header__menu.addEventListener('click', () => {
     console.log('hej')
