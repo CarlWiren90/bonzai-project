@@ -527,7 +527,7 @@ body {
   }
   
   .content__heading {
-    font-size: 3.5rem;
+    font-size: 4rem;
     text-align: left;
     color: var(--black);
     letter-spacing: -2px;
@@ -535,7 +535,7 @@ body {
   }
  
   .content__info {
-    font-size: 1.5em;
+    font-size: 1.7em;
     font-weight: 300;
     text-align: left;
   }
@@ -797,7 +797,7 @@ body {
   }
 
   .content {
-    height: 65vh;
+    height: 80vh;
   }
   
   .heading__container {
@@ -842,6 +842,11 @@ body {
 }
 
 @media (min-width: 567px) and (max-width: 767px) {
+
+  .content {
+    height: 90vh;
+  }
+
   .hero__heading {
     padding-left: 3em;
   }
@@ -880,26 +885,31 @@ body {
     font-size: 3rem;
   }
 
+  .booking__input {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+  }
+
   .content--room-display {
     height: auto;
   }
+
+  .contact__container {
+    align-items: center;
+    text-align: center;
+  }
+
+  .content__heading--contact {
+    text-align: center;
+  } 
 }
 
 @media (min-width: 430px) and (max-width: 566px) {
-  .header__navbar--mobile {
-    display: flex;
-    width: 100%;
-    justify-content: flex-end;
+  .content {
+    height: 90vh;
   }
-/* 
-  .header__navbar {
-    height: 100%;
-    width: 100%;
-  } */
-
-/*   .header__navbar--desktop {
-    display: none;
-  } */
 
   .hero__heading-container {
     padding: 0 0 10em 1em;
@@ -912,27 +922,21 @@ body {
     font-size: 7rem;
   }
   
-  .hero__slogan {
-    padding: 0 0 0 0.3em;
-    width: 12em;
-  }
-
   .button--hero {
     margin: 8em 0 0 1em;
   }
 
-  .content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .innovation, .experience, .responsibility, .footprint {
-    align-items: center;
-  }
-
   .content--footprint {
-    height: 75vh;
+    height: 80vh;
+  }
+
+  
+  .heading__container {
+    max-width: 24em;
+  }
+
+  .content__heading--book-stay {
+    font-size: 2.7rem;
   }
 
   .content--room-display {
@@ -941,6 +945,17 @@ body {
 
   .heading__container {
     text-align: left;
+  }
+
+  .booking__input {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .content--contact {
+    padding: 0 2em;
   }
 }
 
@@ -956,32 +971,25 @@ body {
 
   .content--innovation {
       padding: 0 1.5em 0 1.5em;
+      min-height: 70vh;
     }
 
   .content {
-    height:70vh;
+    height:100vh;
     width: 100vw;  
   }
-
-  .image__container {
-    max-width: 100%;
-  }
-  
+ 
   .content--room-display {
     height: auto;
     padding: 1em 1em 0 1em;
   }
 
-  .room-display__room-item {
-    max-width: 70%;
-  }
-
   .content--footprint {
-    height: 80vh;
+    height: 80vh;  
   }
 
   .content__heading--book-stay {
-    padding-bottom: 0.5em;
+    padding-bottom: 1em;
   }
 
   .content--contact {
