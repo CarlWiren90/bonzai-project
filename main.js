@@ -24,3 +24,8 @@ const learnMoreLink = document.getElementById('hero__learn-more-image');
 learnMoreLink.addEventListener('click', () => {
     document.getElementById('innovation').scrollIntoView({behavior: 'smooth'});
 })
+
+const header__menu = document.querySelector('.header__menu-toggle');
+header__menu.addEventListener('click', () => {
+    console.log('hej')
+})
