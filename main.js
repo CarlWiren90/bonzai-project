@@ -72,7 +72,6 @@ sectionList.forEach(section => {
 const headerMenuToggle = document.querySelector('.header__menu-toggle');
 const headerMenu = document.querySelector('.header__menu');
 headerMenuToggle.addEventListener('click', () => {
-    console.log('hej')
-        headerMenu.classList.toggle('toggle');
-        headerMenuToggle.classList.toggle('rotate');
-    })
+    headerMenu.classList.toggle('toggle');
+    headerMenuToggle.classList.toggle('rotate');
+})
