@@ -17,24 +17,47 @@
 
       <!-- For mobile use -->
        <nav class="header__navbar header__navbar--mobile">
-        <a class="header__menu-toggle" aria-label="Open mobile menu">
-          <img class="header__menu-icon" src="hamburger-white.avif" alt="Menu icon"/>
-          <ul class="header__menu">
-            <a><li class="header__navbar-link--mobile" id="book-hamburger">Book your stay</li></a>
-            <a><li class="header__navbar-link--mobile" id="vision-hamburger">Our vision</li></a>
-            <a><li class="header__navbar-link--mobile" id="contact-hamburger">Contact us</li></a>
-            <a><li class="header__navbar-link--mobile">Instagram</li></a>
-            <a><li class="header__navbar-link--mobile">Facebook</li></a>
+          <!-- Toggle button for the mobile menu -->
+          <button class="header__menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open mobile menu">
+            <img class="header__menu-icon" src="hamburger-white.avif" alt="Menu icon" />
+          </button>
+
+          <!-- Mobile menu -->
+          <ul class="header__menu" id="mobile-menu">
+            <li class="header__navbar-item">
+              <a href="#book-hamburger" class="header__navbar-link--mobile" id="book-hamburger">Book your stay</a>
+            </li>
+            <li class="header__navbar-item">
+              <a href="#vision-hamburger" class="header__navbar-link--mobile" id="vision-hamburger">Our vision</a>
+            </li>
+            <li class="header__navbar-item">
+              <a href="#contact-hamburger" class="header__navbar-link--mobile" id="contact-hamburger">Contact us</a>
+            </li>
+            <li class="header__navbar-item">
+              <a href="https://instagram.com" class="header__navbar-link--mobile" target="_blank"
+                rel="noopener noreferrer">Instagram</a>
+            </li>
+            <li class="header__navbar-item">
+              <a href="https://facebook.com" class="header__navbar-link--mobile" target="_blank"
+                rel="noopener noreferrer">Facebook</a>
+            </li>
           </ul>
-        </a>
        </nav>
 
        <!-- For desktop use -->
-        <nav class="header__navbar header__navbar--desktop">
-          <a class="header__navbar-link" id="book-your-stay">Book your stay</a>
-          <a class="header__navbar-link" id="our-vision">Our vision</a>
-          <a class="header__navbar-link" id='contact-us'>Contact us</a>
-        </nav>
+       <nav class="header__navbar header__navbar--desktop" aria-label="Main Navigation">
+        <ul class="header__navbar-list">
+          <li class="header__navbar-item">
+            <a href="#book-your-stay" class="header__navbar-link" id="book-your-stay">Book your stay</a>
+          </li>
+          <li class="header__navbar-item">
+            <a href="#our-vision" class="header__navbar-link" id="our-vision">Our vision</a>
+          </li>
+          <li class="header__navbar-item">
+            <a href="#contact-us" class="header__navbar-link" id="contact-us">Contact us</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <section class="hero">
@@ -49,12 +72,12 @@
           </h2>
       </div>
       
-      <button class="button button--hero" id="button--hero" aria-label="Book your stay" href="#">Book your stay</button>
+      <button class="button button--hero" id="button--hero" aria-label="Book your stay">Book your stay</button>
       
       <div class="hero__wrapper">
         <p class="hero__learn-more">Learn more</p>
-        <a class="hero__link">
-          <img class="hero__learn-more-icon" id="hero__learn-more-image" src="./scroll-down-image.avif" alt="Scroll down to learn more"/>
+        <a class="hero__link" href="#innovation" aria-label="Scroll down to learn more">
+          <img class="hero__learn-more-icon" id="hero__learn-more-image" src="./scroll-down-arrow.avif" alt="Scroll down to learn more"/>
         </a>
       </div>     
     </section>
