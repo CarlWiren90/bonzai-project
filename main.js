@@ -51,10 +51,22 @@ document.getElementById('button--booking').addEventListener('click', () => {
     smoothScrollToTarget('room-display');
 }) 
 
-document.getElementById('hero__learn-more-image').addEventListener('click', () => {
+document.getElementById('hero__learn-more-image').addEventListener('click', (event) => {
     event.preventDefault();
     smoothScrollToTarget('innovation');
 })
+
+
+
+const sectionList = document.querySelectorAll('.content');  // Use querySelectorAll to get a NodeList
+sectionList.forEach(section => {
+    section.addEventListener('click', () => {
+        if (headerMenu.classList.contains('toggle')) {
+            headerMenu.classList.toggle('toggle');
+        }
+    });
+});
+
 
 //Hamburger toggle
 const headerMenuToggle = document.querySelector('.header__menu-toggle');

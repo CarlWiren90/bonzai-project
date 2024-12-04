@@ -8,6 +8,20 @@
   --altone-reg: 'Altone Trial Regular', sans-serif;
 }
 
+@font-face {
+  font-family: 'Altone Trial Bold';
+  src: url('/fonts/altone_trial-bold-webfont.woff2') format('woff2'),
+       url('/fonts/altone_trial-bold-webfont.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Altone Trial';
+  src: url('/fonts/altone_trial-regular-webfont.woff2') format('woff2'),
+       url('/fonts/altone_trial-regularld-webfont.woff') format('woff');
+  font-display: swap;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -117,7 +131,7 @@ body {
 }
 
 .header__image {
-  width: 100%;
+  width: 50px;
   height: 100%;
 }
 
@@ -134,7 +148,7 @@ body {
 
 .hero {
   display: flex;
-  font-family: var(--altone-bold);
+  font-family: 'Altone Trial Bold';
   grid-area: hero;
   height: 100vh;
   width: 100vw; 
@@ -185,7 +199,7 @@ body {
 }
 
 .button {
-  font-family: var(--altone-bold);
+  font-family: 'Altone Trial Bold';
   font-size: 1.5rem;
   position: absolute;
   width: 8em;
@@ -220,7 +234,7 @@ body {
 
 .hero__learn-more {
   font-size: 1.5rem;
-  font-family: var(--altone-bold);
+  font-family: 'Altone Trial Regular'
 }
 
 .hero__learn-more-icon {
@@ -229,7 +243,7 @@ body {
 }
 
 .content {
-  font-family: 'Altone Trial';
+  font-family: 'Altone Trial Regular';
   background-color: var(--white);
   height: 70vh; 
   width: 100vw;
@@ -287,8 +301,7 @@ body {
 }
 
 .innovation__heading--highlight {
-  color: var(--blue); 
-  background-color: var(--green);
+  color: var(--green); 
 }
 
 .innovation__heading-care {
@@ -590,7 +603,7 @@ label {
   }
 
   .header__navbar-link {
-    font-family: 'Altone Trial';
+    font-family: 'Altone Trial Regular';
     font-size: 1.4rem;
     color: var(--white);
     margin-right:15% ;
@@ -891,7 +904,9 @@ label {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-
+  .header {
+    width: 100vw;
+  }
   .header__navbar--mobile {
     display: none;
  }
@@ -900,6 +915,7 @@ label {
     display: flex;
     align-items: center;
     justify-content: center;
+    
   }
 
 
@@ -913,7 +929,7 @@ label {
 
   .header__navbar-item {
     list-style: none;  
-    min-width: 15em;
+    min-width: 13em;
     text-align: center;
   }
 
@@ -922,7 +938,7 @@ label {
   }
 
   .header__navbar-link {
-    font-family: 'Altone Trial';
+    font-family: 'Altone Trial Regular';
     font-size: 1.4rem;
     color: var(--white);
     margin-right:20% ;
@@ -1179,7 +1195,7 @@ label {
 
   .content--innovation {
       padding: 0 1.5em 0 1.5em;
-      min-height: 70vh;
+      min-height: 75vh;
     }
 
   .content {
@@ -1193,7 +1209,7 @@ label {
   }
 
   .content--footprint {
-    height: 90vh;  
+    height: 110vh;  
   }
 
   .content__heading--book-stay {
