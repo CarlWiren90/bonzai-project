@@ -4,21 +4,19 @@
   --black: #333333;
   --green: rgb(9, 73, 54);
   --blue: #55EABD;
-  --altone-bold: 'Altone Trial', sans-serif;
-  --altone-reg: 'Altone Trial Regular', sans-serif;
+/*   --altone-bold: 'Altone Trial', sans-serif;
+  --altone-reg: 'Altone Trial Regular', sans-serif; */
 }
 
 @font-face {
   font-family: 'Altone Trial Bold';
-  src: url('/fonts/altone_trial-bold-webfont.woff2') format('woff2'),
-       url('/fonts/altone_trial-bold-webfont.woff') format('woff');
+  src: url('/fonts/altone_trial-bold-webfont.woff2') format('woff2');
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Altone Trial';
-  src: url('/fonts/altone_trial-regular-webfont.woff2') format('woff2'),
-       url('/fonts/altone_trial-regularld-webfont.woff') format('woff');
+  src: url('/fonts/altone_trial-regular-webfont.woff2') format('woff2');
   font-display: swap;
 }
 
@@ -79,7 +77,7 @@ body {
 .header__menu {
   display: flex;
   flex-direction: column;
-  font-family: 'Altone Trial';
+  font-family: 'Altone Trial',sans-serif;
   position: absolute;
   top: 0;
   background-color: black;
@@ -148,7 +146,7 @@ body {
 
 .hero {
   display: flex;
-  font-family: 'Altone Trial Bold';
+  font-family: 'Altone Trial Bold',sans-serif;
   grid-area: hero;
   height: 100vh;
   width: 100vw; 
@@ -185,7 +183,8 @@ body {
 }
 
 .hero__slogan {
-  font-weight: 500;
+  font-family: 'Altone Trial Regular';
+  font-weight: 300;
   color: var(--white);
   font-size: 1.5rem;
   width: 12em;
@@ -199,7 +198,7 @@ body {
 }
 
 .button {
-  font-family: 'Altone Trial Bold';
+  font-family: 'Altone Trial Bold',sans-serif;
   font-size: 1.5rem;
   position: absolute;
   width: 8em;
@@ -234,7 +233,7 @@ body {
 
 .hero__learn-more {
   font-size: 1.5rem;
-  font-family: 'Altone Trial Regular'
+  font-family: 'Altone Trial Regular',sans-serif;
 }
 
 .hero__learn-more-icon {
@@ -243,7 +242,7 @@ body {
 }
 
 .content {
-  font-family: 'Altone Trial Regular';
+  font-family: 'Altone Trial Regular',sans-serif;
   background-color: var(--white);
   height: 70vh; 
   width: 100vw;
@@ -383,7 +382,7 @@ body {
 }
 
 #check-in-date, #check-out-date, #guests {
-  font-family: 'Poppins';
+  font-family: 'Poppins',sans-serif;
   width: 13em;
   height: 2em;
   font-size: 1.5rem;
@@ -456,6 +455,7 @@ body {
   object-fit: cover;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
+  aspect-ratio: 4 / 3; 
 }
 
 .room-display__header {
@@ -517,7 +517,7 @@ body {
   font-weight: 600;
 }
 .contact__heading-content-adress {
-  font-family: 'Poppins';
+  font-family: 'Poppins',sans-serif;
   font-size: 1.6rem;
   width: 12em;
 }
@@ -603,7 +603,7 @@ label {
   }
 
   .header__navbar-link {
-    font-family: 'Altone Trial Regular';
+    font-family: 'Altone Trial Regular',sans-serif;
     font-size: 1.4rem;
     color: var(--white);
     margin-right:15% ;
@@ -938,7 +938,7 @@ label {
   }
 
   .header__navbar-link {
-    font-family: 'Altone Trial Regular';
+    font-family: 'Altone Trial Regular',sans-serif;
     font-size: 1.4rem;
     color: var(--white);
     margin-right:20% ;
