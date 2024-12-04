@@ -9,59 +9,58 @@ setCheckInDate();
 setCheckOutDate();
 
 
+const smoothScrollToTarget = (target) => {
+    const element = document.getElementById(target);
+    if (element) {
+        element.scrollIntoView({behavior: 'smooth'})
+    }
+}
+
 //Navbar desktop listeners
-const bookYourStayNavbar = document.getElementById('book-your-stay');
-bookYourStayNavbar.addEventListener('click', () => {
-    document.getElementById('booking').scrollIntoView({behavior: 'smooth'});
+document.getElementById('book-your-stay').addEventListener('click', () => {
+    smoothScrollToTarget('booking');
 })
 
-const ourVisionNavbar = document.getElementById('our-vision');
-ourVisionNavbar.addEventListener('click', () => {
-    document.getElementById('innovation').scrollIntoView({behavior: 'smooth'});
+document.getElementById('our-vision').addEventListener('click', () => {
+    smoothScrollToTarget('innovation');
 })
 
-const contactUsNavbar = document.getElementById('contact-us');
-contactUsNavbar.addEventListener('click', () => {
-    document.getElementById('contact').scrollIntoView({behavior: 'smooth'});
+document.getElementById('contact-us').addEventListener('click', () => {
+    smoothScrollToTarget('contact');
 })
 
 //Navbar hamburger listeners
-const bookYourStayHamburger = document.getElementById('book-hamburger');
-bookYourStayHamburger.addEventListener('click', () => {
-    document.getElementById('booking').scrollIntoView({behavior: 'smooth'});
+document.getElementById('book-hamburger').addEventListener('click', () => {
+    smoothScrollToTarget('booking');
 })
 
-const ourVisionHamburger = document.getElementById('vision-hamburger');
-ourVisionHamburger.addEventListener('click', () => {
-    document.getElementById('innovation').scrollIntoView({behavior: 'smooth'});
+document.getElementById('vision-hamburger').addEventListener('click', () => {
+    smoothScrollToTarget('innovation');
 })
 
-const contactUsHamburger = document.getElementById('contact-hamburger');
-contactUsHamburger.addEventListener('click', () => {
-    document.getElementById('contact').scrollIntoView({behavior: 'smooth'});
+document.getElementById('contact-hamburger').addEventListener('click', () => {
+    smoothScrollToTarget('contact');
 })
-
 
 //Running content listeners
-const heroButton = document.getElementById('button--hero');
-heroButton.addEventListener('click', () => {
-    document.getElementById('booking').scrollIntoView({behavior: 'smooth'});
-})
+document.getElementById('button--hero').addEventListener('click', () => {
+    smoothScrollToTarget('booking');
+}) 
 
-const bookingButton = document.getElementById('button--booking');
-bookingButton.addEventListener('click', () => {
-    document.getElementById('room-display').scrollIntoView({behavior: 'smooth'});
-})
+document.getElementById('button--booking').addEventListener('click', () => {
+    smoothScrollToTarget('room-display');
+}) 
 
-const learnMoreLink = document.getElementById('hero__learn-more-image');
-learnMoreLink.addEventListener('click', () => {
-    document.getElementById('innovation').scrollIntoView({behavior: 'smooth'});
+document.getElementById('hero__learn-more-image').addEventListener('click', () => {
+    event.preventDefault();
+    smoothScrollToTarget('innovation');
 })
 
 //Hamburger toggle
 const headerMenuToggle = document.querySelector('.header__menu-toggle');
 const headerMenu = document.querySelector('.header__menu');
 headerMenuToggle.addEventListener('click', () => {
+    console.log('hej')
         headerMenu.classList.toggle('toggle');
         headerMenuToggle.classList.toggle('rotate');
     })

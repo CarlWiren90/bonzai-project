@@ -86,10 +86,12 @@ body {
   z-index: 999;
   transform: rotate(0deg);
   transition: all 0.2s ease-in-out;
+  background: transparent;
+  border: none;
 }
 
 .toggle {
-  transform: translateX(20%);
+  transform: translateX(10%);
 }
 
 .rotate {
@@ -98,6 +100,12 @@ body {
 
 
 .header__navbar-link--mobile {
+  text-decoration: none;
+  list-style: none;
+  color: var(--white);
+}
+
+.header__navbar-item {
   text-decoration: none;
   list-style: none;
   color: var(--white);
@@ -183,7 +191,7 @@ body {
   width: 8em;
   height: 2em;
   background-color: transparent;
-  color: var(--white);
+  color: var(--blue);
   border: 2px solid var(--white);
   margin-left: 1.3em;
   border-radius: 16px;
@@ -194,6 +202,7 @@ body {
 
 .button--hero {
   margin-top: 2em;
+  color: var(--white);
 }
 
 .hero__wrapper {
@@ -279,6 +288,7 @@ body {
 
 .innovation__heading--highlight {
   color: var(--blue); 
+  background-color: var(--green);
 }
 
 .innovation__heading-care {
@@ -376,17 +386,22 @@ body {
 .button--find-room {
   position: relative;
   border: none;
-  background-color: var(--blue);
+  background-color: var(--green);  
   margin: 0;
   font-size: 1.8rem;
 }
 
 .button--booking {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
+  width: 50%;
+  text-decoration-line: none;
   border: none;
-  background-color: var(--blue);
-  margin: 1.5em 0 0 0;
+  background-color: var(--green);
   font-size: 1.8rem;
+
 }
 
 /* Room display */
@@ -455,12 +470,6 @@ body {
   justify-content: space-between;
 }
 
-.button--booking {
-  margin: 0;
-  width: 7em;
-  font-size: 1.7rem;
-}
-
 .room-display__price {
   font-family: 'Poppins';
   font-size: 1.7rem;
@@ -503,7 +512,7 @@ body {
 /* bookRoom pages */
 
 .body--book-room {
-  height: auto;
+  height: 100vh;
 }
 
 .header__book-room {
@@ -516,8 +525,6 @@ body {
 .content__book-room {
   margin-top: -2em;
   background-color: var(--green);
-  height: 130vh;
-  height: auto;
 }
 
 .content__heading--book-room {
@@ -526,33 +533,6 @@ body {
 
 .content__info--bookroom {
   color: var(--white);
-}
-
-.booking__form {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  gap: 0.6em;
-  color: var(--white);
-  height: 55vh;
-}
-
-.booking__input--user {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
-}
-
-.button--complete {
-  margin: 0;
-}
-.booking__input-user {
-  font-size: 1.2rem;
-  width: 100%;
-  border-radius: 16px;
-  height: 2.3em;
 }
 
 label {
@@ -591,11 +571,29 @@ label {
     gap: 5em;
   }
 
+  .header__navbar-list {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .header__navbar-item {
+    list-style: none;  
+    min-width: 15em;
+    text-align: center;
+  }
+
+  .header__navbar-link {
+    text-decoration: none;
+  }
+
   .header__navbar-link {
     font-family: 'Altone Trial';
     font-size: 1.4rem;
     color: var(--white);
-    margin-right:7% ;
+    margin-right:15% ;
   }
 
   .hero__heading-container {
@@ -832,8 +830,9 @@ label {
    padding: 0 1em 1em 1em;
   }
   
-  .button--booking {
+   .button--booking {
     width: 50%;
+    text-decoration-line: none;
   }
 
   /* Contact-section */
@@ -903,11 +902,30 @@ label {
     justify-content: center;
   }
 
+
+  .header__navbar-list {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .header__navbar-item {
+    list-style: none;  
+    min-width: 15em;
+    text-align: center;
+  }
+
+  .header__navbar-link {
+    text-decoration: none;
+  }
+
   .header__navbar-link {
     font-family: 'Altone Trial';
     font-size: 1.4rem;
     color: var(--white);
-    margin-right:10%;
+    margin-right:20% ;
   }
 
   .hero__heading-container {
@@ -932,7 +950,7 @@ label {
   }
 
   .content {
-    height: 80vh;
+    height: 90vh;
   }
   
   .heading__container {
@@ -950,7 +968,7 @@ label {
   }
 
   .content--footprint {
-    height: 85vh;
+    height: 100vh;
   }
 
   .content--room-display {
@@ -976,12 +994,29 @@ label {
     align-items: center;
     text-align: center;
   }
+
+  .body--book-room {
+    height: 100vh;
+  }
+  
+  .content__book-room {
+    height: 96vh;
+    background-color: var(--green);
+  }
+  
+  .content__heading--book-room {
+    color: var(--white);
+  }
+  
+  .content__info--bookroom {
+    color: var(--white);
+  }
 }
 
 @media (min-width: 567px) and (max-width: 767px) {
 
   .content {
-    height: 90vh;
+    height: 100vh;
   }
 
   .hero__heading {
@@ -1015,7 +1050,7 @@ label {
   }
 
   .content--footprint {
-    height: 90vh;
+    height: 105vh;
   }
 
   .content__heading {
@@ -1049,6 +1084,11 @@ label {
   .content__heading--contact {
     text-align: center;
   } 
+
+  .content__book-room {
+    height: 96vh;
+    background-color: var(--green);
+  }
 }
 
 @media (min-width: 430px) and (max-width: 566px) {
@@ -1102,12 +1142,35 @@ label {
   .content--contact {
     padding: 0 2em;
   }
+
+  
+  .body--book-room {
+    height: 100vh;
+  }
+  
+  .content__book-room {
+    height: 96vh;
+    background-color: var(--green);
+  }
+  
+  .content__heading--book-room {
+    color: var(--white);
+  }
+  
+  .content__info--bookroom {
+    color: var(--white);
+  }
+
+  .content--contact {
+    padding: 0 1em;
+  }
 }
 
 @media screen and (max-width: 429px) {
   .hero__heading-container {
     padding-left: 1em;
   }
+
 
   .button--hero {
     margin-top: 2em;
@@ -1139,6 +1202,24 @@ label {
 
   .content--contact {
     height: 90vh;
+  }
+
+  
+  .body--book-room {
+    height: 100vh;
+  }
+  
+  .content__book-room {
+    height: 96vh;
+    background-color: var(--green);
+  }
+  
+  .content__heading--book-room {
+    color: var(--white);
+  }
+  
+  .content__info--bookroom {
+    color: var(--white);
   }
 }
 
