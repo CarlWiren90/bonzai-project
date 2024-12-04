@@ -516,7 +516,7 @@ body {
 .content__book-room {
   margin-top: -2em;
   background-color: var(--green);
-  min-height: 130vh;
+  height: 130vh;
   height: auto;
 }
 
@@ -553,8 +553,7 @@ body {
   width: 100%;
   border-radius: 16px;
   height: 2.3em;
-/*   padding-left: 0.5em;
- */}
+}
 
 label {
   font-size: 1.4rem;
@@ -783,7 +782,7 @@ label {
   /* Room-display section */
 
   .content--room-display {
-    min-height: 100vh;   /* Ensure it's at least the height of the viewport */
+    min-height: 100vh; 
     height: auto;     
     gap: 2em;            
     padding: 0 9em;     
@@ -858,6 +857,38 @@ label {
     justify-content: space-between;
     flex-direction: row;
   }
+
+  .body--book-room {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* bookRoom pages */
+
+  .header__book-room {
+    height: 3em;
+  }
+
+  .content__book-room {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-top: 2em;
+  }
+
+  .heading__container--book-room {
+    width: 50%;
+  }
+
+  .content__heading--book-room {
+    align-self: flex-start;
+    color: var(--white);
+  }
+
+
+
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
