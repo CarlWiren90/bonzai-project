@@ -9,7 +9,7 @@ setCheckInDate();
 setCheckOutDate();
 
 
-//Navbar listeners
+//Navbar desktop listeners
 const bookYourStayNavbar = document.getElementById('book-your-stay');
 bookYourStayNavbar.addEventListener('click', () => {
     document.getElementById('booking').scrollIntoView({behavior: 'smooth'});
@@ -22,6 +22,22 @@ ourVisionNavbar.addEventListener('click', () => {
 
 const contactUsNavbar = document.getElementById('contact-us');
 contactUsNavbar.addEventListener('click', () => {
+    document.getElementById('contact').scrollIntoView({behavior: 'smooth'});
+})
+
+//Navbar hamburger listeners
+const bookYourStayHamburger = document.getElementById('book-hamburger');
+bookYourStayHamburger.addEventListener('click', () => {
+    document.getElementById('booking').scrollIntoView({behavior: 'smooth'});
+})
+
+const ourVisionHamburger = document.getElementById('vision-hamburger');
+ourVisionHamburger.addEventListener('click', () => {
+    document.getElementById('innovation').scrollIntoView({behavior: 'smooth'});
+})
+
+const contactUsHamburger = document.getElementById('contact-hamburger');
+contactUsHamburger.addEventListener('click', () => {
     document.getElementById('contact').scrollIntoView({behavior: 'smooth'});
 })
 
@@ -43,7 +59,9 @@ learnMoreLink.addEventListener('click', () => {
 })
 
 //Hamburger toggle
-const header__menu = document.querySelector('.header__menu-toggle');
-header__menu.addEventListener('click', () => {
-    console.log('hej')
-})
+const headerMenuToggle = document.querySelector('.header__menu-toggle');
+const headerMenu = document.querySelector('.header__menu');
+headerMenuToggle.addEventListener('click', () => {
+        headerMenu.classList.toggle('toggle');
+        headerMenuToggle.classList.toggle('rotate');
+    })
