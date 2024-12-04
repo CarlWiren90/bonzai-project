@@ -62,6 +62,47 @@ body {
   justify-content: flex-end;
 }
 
+.header__menu {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Altone Trial';
+  position: absolute;
+  top: 0;
+  background-color: black;
+  opacity: 0.9;
+  font-size: 1.4rem;
+  width: 50vw;
+  height: 100vh;
+  padding: 3em 0.7em;
+  transform: translateX(110%);
+  gap: 2em;  
+  transition: all 0.2s ease-in-out;
+  backdrop-filter: blur(10px);
+
+}
+
+.header__menu-toggle {
+  position: relative;
+  z-index: 999;
+  transform: rotate(0deg);
+  transition: all 0.2s ease-in-out;
+}
+
+.toggle {
+  transform: translateX(20%);
+}
+
+.rotate {
+  transform: rotate(90deg);
+}
+
+
+.header__navbar-link--mobile {
+  text-decoration: none;
+  list-style: none;
+  color: var(--white);
+}
+
 .header__logo {
   width: 50px;
   height: auto;
@@ -77,8 +118,10 @@ body {
 }
 
 .header__menu-icon {
-  width: 60px;
+  width: 50px;
   height: auto;
+  position: relative;
+  z-index: 999;
 }
 
 .hero {
@@ -86,7 +129,7 @@ body {
   font-family: var(--altone-bold);
   grid-area: hero;
   height: 100vh;
-  width: 100%; 
+  width: 100vw; 
   position: relative;
   align-items: center;
 }
@@ -180,6 +223,7 @@ body {
   font-family: 'Altone Trial';
   background-color: var(--white);
   height: 70vh; 
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
