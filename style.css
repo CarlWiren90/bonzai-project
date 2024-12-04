@@ -500,6 +500,66 @@ body {
   width: 12em;
 }
 
+/* bookRoom pages */
+
+.body--book-room {
+  height: auto;
+}
+
+.header__book-room {
+  position: static;
+  background-color: var(--green);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+
+}
+.content__book-room {
+  margin-top: -2em;
+  background-color: var(--green);
+  min-height: 130vh;
+  height: auto;
+}
+
+.content__heading--book-room {
+  color: var(--white);
+}
+
+.content__info--bookroom {
+  color: var(--white);
+}
+
+.booking__form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 0.6em;
+  color: var(--white);
+  height: 55vh;
+}
+
+.booking__input--user {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.button--complete {
+  margin: 0;
+}
+.booking__input-user {
+  font-size: 1.2rem;
+  width: 100%;
+  border-radius: 16px;
+  height: 2.3em;
+/*   padding-left: 0.5em;
+ */}
+
+label {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
 
 @media (min-width: 1025px) {
 

@@ -72,9 +72,11 @@ const createRoomFooter = (room) => {
     roomPrice.innerText = room.roomPrice + ' €'
     roomFooter.appendChild(roomPrice);
 
-    const bookButton = document.createElement('button');
+    const bookButton = document.createElement('a');
     bookButton.classList.add('button', 'button--booking');
     bookButton.innerText = 'Book now'
+    bookButton.type = 'submit'
+    bookButton.href="bookRoomGaia.html"
     roomFooter.appendChild(bookButton);
     return roomFooter;
 }
