@@ -63,6 +63,7 @@ sectionList.forEach(section => {
     section.addEventListener('click', () => {
         if (headerMenu.classList.contains('toggle')) {
             headerMenu.classList.toggle('toggle');
+            headerMenuToggle.classList.toggle('rotate');
         }
     });
 });

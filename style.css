@@ -631,13 +631,16 @@ label {
   }
 
   .content {
-    padding: 0 9em;
+    padding: 0 3em;
     gap: 4em;
     height: 65vh;
   }
   
    .heading__container {
     gap: 2em;
+    max-width: 32em;
+    min-width: 21em;
+    justify-self: center;
   }
   
   .content__heading {
@@ -646,6 +649,7 @@ label {
     color: var(--black);
     letter-spacing: -2px;
     align-self: center;
+    padding: 0;
   }
  
   .content__info {
@@ -658,6 +662,7 @@ label {
     max-width: 32em;
     min-width: 21em;
     height: auto;
+    justify-self: center;
   }
   
   .content__image {
@@ -675,11 +680,6 @@ label {
 
   .heading__container--innovation {
     grid-column: 1 / 2;
-    padding: 0;
-  }
-
-  .content__heading--innovation {
-    padding: 0;
   }
 
   .content__image-container--innovation {
@@ -706,7 +706,6 @@ label {
 
   .content__heading--experience {
     color: var(--blue);
-    padding: 0;
     align-self: flex-start;
   }
 
@@ -719,12 +718,10 @@ label {
 
   .heading__container--responsibility {
     grid-column: 1 / 2;
-    padding: 0;
   }
 
   .content__heading--responsibility {
     align-self: flex-start;
-    padding: 0;
   }
 
   .content__image-container--responsibility {
@@ -734,7 +731,7 @@ label {
   /* Footprint-section */
 
   .content--footprint {
-    height: 80vh;
+    height: 75vh;
     display: grid;
     grid-template-columns: 1fr 1fr; 
     grid-template-rows: 1fr 10% ; 
@@ -752,7 +749,6 @@ label {
 
   .content__heading--footprint {
     color: var(--blue);
-    padding: 0;
     align-self: flex-start;
   }
 
@@ -769,11 +765,17 @@ label {
 
   .content--booking {
     padding: 0;
-    height:65vh;
+    height:70vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 0 9em;
     gap: 1em;
+  }
+
+  .booking__input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   #check-in-date, #check-out-date, #guests {
@@ -796,7 +798,7 @@ label {
     min-height: 100vh; 
     height: auto;     
     gap: 2em;            
-    padding: 0 9em;     
+    padding: 0 3em;     
   }
 
   .room-display__room-list {
@@ -808,6 +810,7 @@ label {
 
   .heading__container--room-display {
     gap: 0;
+    padding-top: 2em;
   }
 
  .content__heading--room-display {
@@ -898,9 +901,6 @@ label {
     align-self: flex-start;
     color: var(--white);
   }
-
-
-
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -966,25 +966,42 @@ label {
   }
 
   .content {
-    height: 90vh;
+    height: 100vh;
   }
   
   .heading__container {
-    width: 60%;
+    max-width: 24em;
   }
 
   .content__heading {
+    text-align: left;
+    font-size: 3rem;
+  }
+
+  .content__heading--innovation {
     text-align: center;
     font-size: 3rem;
   }
 
   .content__info {
-    text-align: center;
+    text-align: left;
     font-size: 1.7rem;
+    
+  }
+  
+  .heading__container--innovation {
+    max-width: 28em;
+  }
+  .content__info--innovation {
+    text-align: center;
+  }
+
+  .content--booking {
+    height: 80vh;
   }
 
   .content--footprint {
-    height: 100vh;
+    height: 105vh;
   }
 
   .content--room-display {
@@ -1019,6 +1036,10 @@ label {
     height: 96vh;
     background-color: var(--green);
   }
+
+  .content__heading--contact {
+    text-align: center;
+  }
   
   .content__heading--book-room {
     color: var(--white);
@@ -1046,6 +1067,10 @@ label {
   .hero__heading {
     width: 20em;
     line-height: 3.5rem;
+  }
+
+  .content--booking {
+    height: 80vh;
   }
 
   .hero__bonzai {
@@ -1180,6 +1205,10 @@ label {
   .content--contact {
     padding: 0 1em;
   }
+
+  .content--booking {
+    height: 80vh;
+  }
 }
 
 @media screen and (max-width: 429px) {
@@ -1199,7 +1228,7 @@ label {
     }
 
   .content {
-    height:100vh;
+    height:90vh;
     width: 100vw;  
   }
  
@@ -1208,19 +1237,14 @@ label {
     padding: 1em 1em 0 1em;
   }
 
-  .content--footprint {
-    height: 110vh;  
-  }
-
   .content__heading--book-stay {
     padding-bottom: 1em;
   }
 
   .content--contact {
-    height: 90vh;
+    height: 80vh;
   }
 
-  
   .body--book-room {
     height: 100vh;
   }
