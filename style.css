@@ -211,6 +211,12 @@ body {
   font-weight: 700;
   box-shadow: 0 0 2px 0;
   letter-spacing: -1px;
+  transition: 0.2s ease-in-out all;
+}
+
+.button:hover {
+  scale: 1.05;
+  cursor: pointer;
 }
 
 .button--hero {
@@ -239,6 +245,12 @@ body {
 .hero__learn-more-icon {
   height: auto;
   width: 40px;
+}
+
+.hero__learn-more-icon:hover {
+  scale: 1.05;
+  transition: 0.2s ease-in-out all;
+  cursor: pointer;
 }
 
 .content {
@@ -533,6 +545,8 @@ body {
   background-color: var(--green);
   backdrop-filter: blur(0px);
   -webkit-backdrop-filter: blur(0px);
+  display: flex;
+  align-items: center;
 
 }
 .content__book-room {
@@ -604,13 +618,30 @@ label {
 
   .header__navbar-link {
     text-decoration: none;
+    position: relative;
   }
+
+  .header__navbar-link::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top:100%;
+    border-bottom: 2px solid white;
+    width: 0%;
+    transition: all 0.2s ease-in-out;
+
+  }
+
+  .header__navbar-link:hover::before {
+    width: 100%;
+    
+  }
+
 
   .header__navbar-link {
     font-family: 'Altone Trial Regular',sans-serif;
     font-size: 1.4rem;
     color: var(--white);
-    margin-right:5%;
   }
 
   .hero__heading-container {
