@@ -576,12 +576,16 @@ label {
     display: none;
   }
 
+  .header__logo {
+    position: absolute;
+  }
   .header__navbar--desktop {
     display: flex;
     align-items: center;
     height: 3.5em;
     justify-content: center;
     gap: 5em;
+    width: 100%;
   }
 
   .header__navbar-list {
@@ -606,7 +610,7 @@ label {
     font-family: 'Altone Trial Regular',sans-serif;
     font-size: 1.4rem;
     color: var(--white);
-    margin-right:15% ;
+    margin-right:5%;
   }
 
   .hero__heading-container {
