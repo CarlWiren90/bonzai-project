@@ -425,7 +425,6 @@ body {
   border: none;
   background-color: var(--green);
   font-size: 1.8rem;
-
 }
 
 /* Room display */
@@ -542,7 +541,7 @@ body {
 
 .header__book-room {
   position: static;
-  background-color: var(--green);
+  background-color: var(--white);
   backdrop-filter: blur(0px);
   -webkit-backdrop-filter: blur(0px);
   display: flex;
@@ -551,15 +550,19 @@ body {
 }
 .content__book-room {
   margin-top: -2em;
-  background-color: var(--green);
+  background-color: var(--white);
 }
 
 .content__heading--book-room {
-  color: var(--white);
+  color: var(--black);
 }
 
 .content__info--bookroom {
-  color: var(--white);
+  color: var(--black);
+}
+
+.room-display__image--complete-booking {
+  border-radius: 16px;
 }
 
 label {
@@ -667,7 +670,7 @@ label {
 
   .content {
     padding: 0 3em;
-    gap: 4em;
+    gap: 2em;
     height: 65vh;
   }
   
@@ -908,12 +911,6 @@ label {
     flex-direction: row;
   }
 
-  .body--book-room {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
-
   /* bookRoom pages */
 
   .header__book-room {
@@ -925,7 +922,8 @@ label {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding-top: 2em;
+    padding-top: 4em;
+    justify-content: center;
   }
 
   .heading__container--book-room {
@@ -934,7 +932,6 @@ label {
 
   .content__heading--book-room {
     align-self: flex-start;
-    color: var(--white);
   }
 }
 
@@ -1069,20 +1066,12 @@ label {
   
   .content__book-room {
     height: 96vh;
-    background-color: var(--green);
   }
 
   .content__heading--contact {
     text-align: center;
   }
   
-  .content__heading--book-room {
-    color: var(--white);
-  }
-  
-  .content__info--bookroom {
-    color: var(--white);
-  }
 }
 
 @media (min-width: 567px) and (max-width: 767px) {
@@ -1163,7 +1152,6 @@ label {
 
   .content__book-room {
     height: 96vh;
-    background-color: var(--green);
   }
 }
 
@@ -1226,15 +1214,6 @@ label {
   
   .content__book-room {
     height: 96vh;
-    background-color: var(--green);
-  }
-  
-  .content__heading--book-room {
-    color: var(--white);
-  }
-  
-  .content__info--bookroom {
-    color: var(--white);
   }
 
   .content--contact {
@@ -1286,15 +1265,7 @@ label {
   
   .content__book-room {
     height: 96vh;
-    background-color: var(--green);
   }
-  
-  .content__heading--book-room {
-    color: var(--white);
-  }
-  
-  .content__info--bookroom {
-    color: var(--white);
-  }
+
 }
 

@@ -1,5 +1,6 @@
 import { rooms } from "./rooms";
 
+
 const roomList = document.querySelector('.room-display__room-list');
 
 export const renderRoomList = () => {
@@ -74,9 +75,16 @@ const createRoomFooter = (room) => {
 
     const bookButton = document.createElement('a');
     bookButton.classList.add('button', 'button--booking');
+    bookButton.id = 'button--book-room'
     bookButton.innerText = 'Book now'
     bookButton.type = 'submit'
-    bookButton.href="bookRoomGaia.html"
+/*     bookButton.href="bookRoomGaia.html"
+ */
+    bookButton.addEventListener('click', () => {
+        const roomData = encodeURIComponent(JSON.stringify(room)); // Convert room object to string
+    window.location.href = `bookRoomGaia.html?data=${roomData}`; // Pass it in the URL
+    });
+
     roomFooter.appendChild(bookButton);
     return roomFooter;
 }

@@ -57,8 +57,7 @@ document.getElementById('hero__learn-more-image').addEventListener('click', (eve
 })
 
 
-
-const sectionList = document.querySelectorAll('.content');  // Use querySelectorAll to get a NodeList
+const sectionList = document.querySelectorAll('.content'); 
 sectionList.forEach(section => {
     section.addEventListener('click', () => {
         if (headerMenu.classList.contains('toggle')) {

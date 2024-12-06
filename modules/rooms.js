@@ -1,7 +1,7 @@
 
 export const rooms = [
     {
-        roomName: 'Gaia.',
+        roomName: 'Gaia',
         roomID: 0,
         roomAvailable: true,
         roomPrice: 199,
@@ -13,7 +13,7 @@ export const rooms = [
         balcony: false,
     },
     {
-        roomName: 'Luna.',
+        roomName: 'Luna',
         roomID: 1,
         roomAvailable: true,
         roomPrice: 129,
@@ -25,7 +25,7 @@ export const rooms = [
         balcony: false,
     },
     {
-        roomName: 'Aura.',
+        roomName: 'Aura',
         roomID: 2,
         roomAvailable: true,
         roomPrice: 169,
