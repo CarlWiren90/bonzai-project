@@ -36,14 +36,14 @@ const createRoomItemImage = (room) => {
     const roomItemImage = document.createElement('img');
     roomItemImage.classList.add('room-display__image', 'room-display__image' + room.roomID);
     roomItemImage.src = room.roomImage;
-    if (room.roomName === 'Gaia.') {
+    if (room.roomName === 'Gaia') {
         roomItemImage.setAttribute('alt', 'Lush room with a queensize bed and plants');
     }
-    else if (room.roomName === 'Luna.') {
+    else if (room.roomName === 'Luna') {
         roomItemImage.setAttribute('alt', 'Cozy room with a kingsize bed and white walls');
 
     }
-    else if (room.roomName === 'Aura.') {
+    else if (room.roomName === 'Aura') {
         roomItemImage.setAttribute('alt', 'Warm room with twin beds and balcony overlooking a garden');
 
     }
